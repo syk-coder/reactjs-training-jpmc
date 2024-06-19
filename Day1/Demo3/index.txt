@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<head>
+    <title>Importing Export</title>
+    <script type="module" src="App.js"></script>
+</head>
+<body>
+    <h1>Export and Import in ReactJs</h1>
+</body>
+</html>

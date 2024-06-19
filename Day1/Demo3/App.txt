@@ -1,0 +1,20 @@
+// import employee from './Company.js';
+// let x = new employee();
+// x.admin();
+
+// import emp from './Company.js';
+// let x = new emp();
+// x.admin();
+
+// import emp from './Company.js';
+// emp();
+
+// import emp from './Company.js';
+// console.log(emp);
+
+// import {employee1,employee2} from './Company.js';
+// let x = new employee1();
+// let y=new employee2();
+// x.admin1();
+// y.admin2();
+
