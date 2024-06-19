@@ -1,0 +1,124 @@
+Props
+Props are argument passed into React components.Props are passed into React 
+components via HTML attributes.
+
+We can pass props in unidirectional flow.(One way from parent to child)
+
+props data is immutable(read only)
+
+Props can be any data type
+String
+Integer
+Boolean
+Array
+Objects
+Functions
+
+------------------------------------------------
+State
+ -Defining
+ -Using State Correctly
+ -Data Flows Down
+Web application consist client side page and server side page
+	Client side page could be HTML page
+	Server side page could be jsp or servlet
+	
+	All pages or files deployed on to the server
+	Because we are using http protocol so we can not share information from
+	one page to other page
+	To overcome on this drawback(if you cant share the info accross multiple page)
+	we use the mechanism called State management.
+
+	There are two type of state management:
+	client side state management
+		Example:cookies,localStorage or sessionStorage 
+	server side state management
+		session,application
+		session.setAttribute("name","user");
+		session.getAttribute("name");
+	
+State in React Js
+
+It is buit in React object that is used to contain data or information 
+about the component.
+
+The state of a component is an object that holds some information that may change over the 
+lifetime of the component.
+
+We can create state only in class component.
+
+But if you want to use state in functional component ,you will use hooks.
+
+There are two way to initialize state in React Component:
+1.Directly inside class(Without constructor)
+2.Inside the constructor(With Constructor)
+
+To change a value in the state object we use
+	this.seState() method
+
+Event
+ -Listening/Subscribing/Writing to an Event
+ -In Vanilla JavaScript
+ -In React:Function Component
+ -In React:Class Component
+ -Binding
+
+asynchronous:
+
+Difference between State and Props
+
+An Event is an action that could be triggered as a result of the user action 
+or system generated
+
+onClick={shoot}
+
+<button onClick={showMsg}>Hello,Everyone</button> In function component
+
+<button onClick={this.showMsg}>Hello,Everyone</button> In class component
+
+Prevent the default behaviour:
+	call preventDefault event explicitly to prevent the default behaviour
+
+In Html to prevent the default link behaviour of opening a new page,we can write:
+<a href="#" onclick="console.log('you had clicked a Link');return false">
+Click me
+</a>
+
+In React we can write like
+function ActionLink(){
+	function handleClick(e){
+		e.preventDefault();
+		console.log('You had clicked Link');
+	}
+return(
+<a href="#" onClick={handleClick}>
+click me
+</a>
+);
+}
+
+Bind:
+this.handler.bind(something) returns a new function(Bind create a new function!) in 
+which references to this will refer to something.
+
+Why we need to bind() event handler in class components in react:
+
+
+https://legacy.reactjs.org/docs/faq-functions.html
+
+-----------------------------------------------------------------
+
+How to access child's state from parent component in React
+
+Use a callback function
+
+What is callback function:
+	A javascript callback is a function which is to 
+	be executed after another function has finished execution.
+	Means Any function that is passed as an argument to another
+	function so that it can be executed in that other function is 
+	called as callback function.
+
+
+
+
