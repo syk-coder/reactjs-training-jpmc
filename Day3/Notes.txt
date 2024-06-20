@@ -1,0 +1,152 @@
+React Lists
+
+List are used to display data in an ordered format and mainly used to display 
+menus on website.
+
+In React ,Lists can be created in similar way as we create Lists in javascript.
+
+The map() function is used for traversing the lists.
+
+------------------------------------------------
+React Keys
+When creating a list in JSX,React may show you an error and ask for a key.
+
+A key is a special string attribute you need to include when creating list of element.
+
+----------------------------------------------------------------
+
+Phase of Component:-
+
+Creation
+Updating
+Deletion
+
+lifecycle hooks in functional based component
+or
+in class based component lifecycle method
+
+Phase of component:
+Mounting
+	Mounting is the process of creating an element and inserting it in a DOM tree.
+	Mounting has 3 methods
+		constructor()
+		render()
+		componentDidMount()
+Updating
+	Updating is the process of changing state or props of component and update changes
+	componentDidUpdate()
+Unmounting
+	Unmounting is the process of removing component from the DOM
+	comonentWillUnmount
+--------------------------------------------------------------------------------------------------------------
+Hooks
+ -Defined
+ -Why Hooks
+ -No breaking API changes
+ -Hooks API
+ -useState
+ -useEffect
+ -Rules of Hooks
+
+Hooks allows us to use state and other React features without writing class.
+
+When to use a Hook:
+
+Rules of Hooks
+1.Only call Hook at the top level
+	Do not call Hooks inside loops,conditions,or nested functions.Hooks should always be used at the
+        top level of the React function.
+2.Only call Hook from React functions
+
+setState() and states
+
+Built in Hook
+  -useState
+	To use state in functional component
+  -useEffect
+	is a hook for encapsulating code that has 'side effects'.The function passed to useEffect will run
+	after the render is commited to the screen.
+
+https://react.dev/reference/react/useEffect
+
+---------------------------------------------------------------------------
+Forms
+ -Reuse of change logic across multiple inputs
+ -Handling Form Submission
+ -Controlling other form element:select,text,textarea,number
+ -Form Validation
+ -Controlled Component
+ -UnControlled Component
+
+What is Controlled Component:
+ A component in reactjs is referred to as controlled when we let react control the component for us.
+ It means that the component controls the input form, and all of its changes are completely driven by event handlers like 
+ setState().
+ Also the component controls the render and keep the data form in the component state.
+
+What is Uncontrolled Component:
+ Uncontrolled component does not use state.
+ So uncontrolled component do not depend upon any state of input element or any event handler.
+ This type of component does not care about real-time input changes.
+
+createRef creates a ref object which can contain arbitrary value.
+
+Validator
+ -Form Validation
+
+We need to install from project folder
+	npm install validator
+
+
+--------------------------------------------------------------------------------
+Routing
+ -Installation
+ -Basic
+ -Handling Not Found(404)
+ -Parameters(Url & Query)
+ -Nesting
+
+What is React Router
+ Routing is the process in which a user is directed to different pages based on their action or request.
+ ReactJs Router is mainly used for developing Single Page Web Application.And used to define multiple routes
+ in the application.
+ 
+Need of React Router
+
+React Router Installation
+	npm install react-router-dom --save
+
+------------------------------------------------------------------------------------
+HTTP
+ Fetch API
+ Axios library
+ Using with React(Http GET)
+ Refactoring for Reuse
+ Http POST,PUT,DELETE,GET
+
+Axios is library in react to consume API based on promise HTTP client
+	GET
+	POST
+	PUT
+	DELETE
+
+Fetch API is a browser based in-built web API
+
+Fetch API is an inbuilt JavaScript method for getting resources from a server or an API endpoint.
+	http://localhost:8080/myapp/getData
+To use axios in our project we need to install axios library
+	npm install axios
+
+axios.get(url[,config])
+axios.post(url[,data[,config]])
+axios.put(url[,data[,config]])
+axios.delete(url[,config])
+
+
+
+
+
+
+
+
+
