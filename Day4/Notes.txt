@@ -1,0 +1,153 @@
+=>Redux
+	-What is Redux?
+	-Benefits Checklist
+  	-Principles of Redux
+	-Core Concepts(Store,State,Reducers,Actions,Action Creators)
+	-Complementray Packages
+	-When do we need Redux
+	-Demo
+	-Tips/Gotchas
+	-React Redux Library
+	-Asynchronous Action (Redux Thunc)
+	-Installation
+	-Working with Redux saga
+	-Example using Redux,Redux-thunk and Redux-saga
+
+What is Redux:
+	Redux is an open-source javascript library used to manage application state.
+	It allows React components to read data from a redux store,and dispatch actions 
+	to the store to update data.
+	
+	Actions
+		-An actions sends data from your application to the Redux store.
+		-It has two properties
+			Type
+				-The type is generally an uppercase string(assigned 
+				to a constant) that describes the action.
+			payload
+				-The payload is additional data that may be passed 
+				-Actions are payloads of informations that send
+				data from your application to your store
+	Action Creators
+		An action creator is a function that returns an action.
+	Reducers
+		-A reducer is a function that takes two parameters:state and action
+		-A reducer is is immutable and always returns a copy of the entire
+		state
+	Store
+		-The Redux application state lives in the state,which is initialized
+		with a reducer.When used with React , a <Provider> exists to wrap
+		the application,and anything within the provider can have access to
+		Redux.
+		
+
+		A store has below responsibilities:
+			-Holds application state
+			-Allows access to state via getState()
+			-Allows state to be updated via dispatch(action)
+	Dispatch
+		Dispatch is a method available on the store object that accepts an object 
+		which is used to update the Redux state.
+	Connect
+		The connect() function is one typical way to connect React to Redux.
+
+Why should I use Redux?
+	-Easily manage global state
+	-Easily keep track of changes with Redux
+	
+
+Redux dependency:
+	Redux
+	React Redux
+	Redux Thunk(Redux thunk is middleware which is used to perform the operations Asyncronously)
+	Redux DevTools Extension
+
+Installation
+	npm install react-redux
+	npm install redux
+	or
+	npm install redux react-redux
+
+What is Redux Saga:
+	redux-saga is a library that aims to make application side effect(i.e. asynchronous things like data
+	fetching and impure things like accessing the browser cache)
+	To perform complex asynchronous operations
+	Is middleware which means it can access to the full redux application state and it can dispatch
+	redux actions as well.
+
+------------------------------------------------------------------------------------------
+
+=>Unit Testing
+	Tools(Jest,Enzyme)
+	Syntax
+	Testing with zest
+	Mocking
+
+What is Unit Test
+What is the purpose of unit test?
+When should you write a unit test?
+Prerequisite for React unit testing
+	Jest
+	Enzyme
+				Jest helps us do all the assertions,and Enzyme helps us render React component
+				in testing mode.
+Installation
+	npm install --save-dev jest
+	npm install –save-dev enzyme
+	npm install --save @types/enzyme-adapter-react-16
+
+	yarn add enzyme react-test-renderer enzyme-adapter-react-16 --dev
+
+---------------------------------------------------------------------------------------------------
+
+Build & Deploy
+	-Building a react application for Production
+	-Deploying a react application
+
+Building
+	Once a React application development is done,application needs to be bundled and deployed to a 
+	production server.
+
+	What are the commands
+	
+	A single command is enough to create a production build of the application.
+		npm run build
+
+	The build folder is ready to be deployed.
+	You may serve it with a static server
+
+	npm install -g serve
+
+	Once the application is build,the application is available under build/static folder
+
+Deployment
+	Once the application is build,it can be deployed to any web server.
+	
+	Local Deployment
+		npm install -g serve
+		To start the application using serve
+			cd /go/to/app/root/folder
+			serve -s build
+
+		By default serve serve the application using port 5000.
+				http://localhost:5000
+
+	Production Deployment
+		Production deployment can be easily done by copying the files under build/static folder
+		to the production application's root directory.
+		It will work in all web server including Apache,IIS,Nginx, etc.
+
+-----------------------------------------------------------------------------------------------
+
+
+Micro UI
+	Micro UI(Micro User Interface) in the context of React refers to a design and architectural
+	approach where a large web application is composed of smaller,independent,and reusable
+	user interface components.
+	The concept aligns with the broader Micro frontend architecture,which aims to being the benefits of microservices
+	to the frontend development enabling teams to build,test,and deploy features independently.
+
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
+
+
